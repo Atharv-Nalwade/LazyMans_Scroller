@@ -1,26 +1,16 @@
-import selenium
 import re
 import time
 import isodate
-import keyboard
-
 from decouple import config
-
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException, NoSuchWindowException
 from googleapiclient.discovery import build
 
-
-
-
 api_key = config('API_KEY')
-
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 def create_driver():
     return webdriver.Firefox()
-
 
 def is_driver_alive(driver):
     try:
@@ -29,13 +19,11 @@ def is_driver_alive(driver):
     except (WebDriverException, NoSuchWindowException):
         return False
 
-
 def main():
     driver = create_driver()
     driver.get("https://www.youtube.com/")
 
     print(driver.title)
-
     time.sleep(10)
 
     shorts_tab = driver.find_element(
@@ -49,7 +37,11 @@ def main():
             shorts_screen = driver.find_element(
                 "xpath", '/html/body/ytd-app/div[1]/ytd-page-manager/ytd-shorts/div[4]/div[2]/ytd-button-renderer/yt-button-shape/button/yt-touch-feedback-shape/div')
             shorts_screen.click()
-            short_url=re.search(r"shorts/(.+)$", driver.current_url).group(1)
+
+            # Introduce a short delay to allow content to load
+            time.sleep(2)
+
+            short_url = re.search(r"shorts/(.+)$", driver.current_url).group(1)
             video_request = youtube.videos().list(
                 part='contentDetails',
                 id=short_url
@@ -62,14 +54,13 @@ def main():
 
                 # Parse the duration from ISO 8601 format
                 duration_seconds = int(isodate.parse_duration(duration).total_seconds())
-                print(f"Duration: {duration_seconds} seconds")
-            time.sleep(duration_seconds-1)
-
+                print(f"{short_url} and its duration is {duration_seconds} seconds")
+            time.sleep(duration_seconds)  # Sleep for the current short's duration
+            
     except KeyboardInterrupt:
         print("Exiting...")
     finally:
         driver.quit()
-
 
 if __name__ == "__main__":
     main()
