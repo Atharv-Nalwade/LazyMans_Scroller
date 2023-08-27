@@ -1,10 +1,22 @@
 import selenium
+import re
+import time
+import isodate
+import keyboard
+
+from decouple import config
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException, NoSuchWindowException
-import time
-import keyboard  # Import the keyboard library
+from googleapiclient.discovery import build
 
+
+
+
+api_key = config('API_KEY')
+
+youtube = build('youtube', 'v3', developerKey=api_key)
 
 def create_driver():
     return webdriver.Firefox()
@@ -37,7 +49,21 @@ def main():
             shorts_screen = driver.find_element(
                 "xpath", '/html/body/ytd-app/div[1]/ytd-page-manager/ytd-shorts/div[4]/div[2]/ytd-button-renderer/yt-button-shape/button/yt-touch-feedback-shape/div')
             shorts_screen.click()
-            time.sleep(30)
+            short_url=re.search(r"shorts/(.+)$", driver.current_url).group(1)
+            video_request = youtube.videos().list(
+                part='contentDetails',
+                id=short_url
+            )
+            response = video_request.execute()
+            if 'items' in response:
+                video_item = response['items'][0]
+                content_details = video_item['contentDetails']
+                duration = content_details['duration']
+
+                # Parse the duration from ISO 8601 format
+                duration_seconds = int(isodate.parse_duration(duration).total_seconds())
+                print(f"Duration: {duration_seconds} seconds")
+            time.sleep(duration_seconds-1)
 
     except KeyboardInterrupt:
         print("Exiting...")
