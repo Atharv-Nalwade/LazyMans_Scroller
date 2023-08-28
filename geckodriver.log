@@ -1407,3 +1407,103 @@ Fb/<@https://www.youtube.com/s/desktop/165dcb41/jsbin/webcomponents-sd.vflset/we
 1693156714205	Marionette	INFO	Stopped listening on port 50553
 JavaScript error: resource://gre/actors/AudioPlaybackChild.sys.mjs, line 17: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
 Dynamically enable window occlusion 1
+1693242316852	geckodriver	INFO	Listening on 127.0.0.1:62370
+1693242319958	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "62371" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Atharv\\AppData\\Local\\Temp\\rust_mozprofileyVHwpN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693242320926	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693242321046	Marionette	INFO	Listening on port 62379
+Read port: 62379
+WebDriver BiDi listening on ws://127.0.0.1:62371
+1693242321151	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62371/devtools/browser/f37854c6-ae42-4b6e-9df0-d6aeb3f139b9
+1693242327172	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 4040 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 22520, MediaDecoderStateMachine #1] WARNING: 1f10561aef0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 4040 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 22520, MediaDecoderStateMachine #1] WARNING: 1f105619570 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 22520, MediaDecoderStateMachine #1] WARNING: 1f105619570 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 4040 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 22520, MediaDecoderStateMachine #1] WARNING: 1f1029ac020 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 22520, MediaDecoderStateMachine #1] WARNING: 1f1029ac020 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 4040 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 22520, MediaDecoderStateMachine #1] WARNING: 1f10561a780 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 22520, MediaDecoderStateMachine #1] WARNING: 1f10561a780 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 4040 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AudioPlaybackChild.sys.mjs, line 17: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1693242487521	Marionette	INFO	Stopped listening on port 62379
+Dynamically enable window occlusion 1
+1693242743671	geckodriver	INFO	Listening on 127.0.0.1:62845
+1693242746740	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "62846" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Atharv\\AppData\\Local\\Temp\\rust_mozprofilef4Pgb2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693242747368	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693242747484	Marionette	INFO	Listening on port 62868
+WebDriver BiDi listening on ws://127.0.0.1:62846
+Read port: 62868
+1693242747751	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62846/devtools/browser/f407aa5e-fe2b-452e-83fc-9252171cb2a1
+1693242752950	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 9920, MediaDecoderStateMachine #1] WARNING: Decoder=2868a819d00 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 9920, MediaDecoderStateMachine #1] WARNING: Decoder=2868a819d00 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:166
+[Child 9920, MediaDecoderStateMachine #1] WARNING: 2868b0c5ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 9920, MediaDecoderStateMachine #1] WARNING: 2868b0c5ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 2106 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 9920, MediaDecoderStateMachine #1] WARNING: 2868b0c5ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 9920, MediaDecoderStateMachine #1] WARNING: 2868b0c5ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 2106 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 9920, MediaDecoderStateMachine #1] WARNING: 28687243ef0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 9920, MediaDecoderStateMachine #1] WARNING: 28687243ef0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 2106 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.youtube.com/s/desktop/165dcb41/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js, line 2554: Script terminated by timeout at:
+PCa@https://www.youtube.com/s/desktop/165dcb41/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:2554:31
+OCa/c<@https://www.youtube.com/s/desktop/165dcb41/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:2544:62
+OCa@https://www.youtube.com/s/desktop/165dcb41/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:2544:31
+Gn.prototype.transition@https://www.youtube.com/s/desktop/165dcb41/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:2543:3
+rG/<@https://www.youtube.com/s/desktop/165dcb41/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:8390:114
+
+JavaScript error: resource://gre/actors/AudioPlaybackChild.sys.mjs, line 17: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1693242865305	Marionette	INFO	Stopped listening on port 62868
+Dynamically enable window occlusion 1
+1693242914851	geckodriver	INFO	Listening on 127.0.0.1:63087
+1693242917905	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "63088" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Atharv\\AppData\\Local\\Temp\\rust_mozprofiler2pZhW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693242918556	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693242918705	Marionette	INFO	Listening on port 63096
+WebDriver BiDi listening on ws://127.0.0.1:63088
+Read port: 63096
+1693242919033	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63088/devtools/browser/4b15a85a-00d4-44e5-990f-418a850b9b7d
+1693242924596	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 26676, MediaDecoderStateMachine #1] WARNING: Decoder=227484f9400 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 26676, MediaDecoderStateMachine #1] WARNING: Decoder=227484f9400 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:166
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aefc010 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 2114 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aec0020 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aec0020 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 2114 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aefc010 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aefc010 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 2114 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aefb240 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aefb240 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 2114 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aefbce0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aefbce0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 2114 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aaa9010 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aaa9010 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 2114 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aaa8ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274aaa8ac0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 2114 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274393b570 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+[Child 26676, MediaDecoderStateMachine #1] WARNING: 2274393b570 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://www.google.com/js/th/m1c0gC2mKP6K-1luAo-g244IPBifFXMG9ixLMnE8OLk.js line 2 > eval line 2114 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AudioPlaybackChild.sys.mjs, line 17: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1693243311328	Marionette	INFO	Stopped listening on port 63096
+Dynamically enable window occlusion 1

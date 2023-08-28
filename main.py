@@ -1,10 +1,10 @@
-import re
-import time
-import isodate
 from decouple import config
 from selenium import webdriver
 from selenium.common.exceptions import WebDriverException, NoSuchWindowException
 from googleapiclient.discovery import build
+import isodate
+import re
+import time
 
 api_key = config('API_KEY')
 youtube = build('youtube', 'v3', developerKey=api_key)
@@ -40,7 +40,7 @@ def main():
 
             # Introduce a short delay to allow content to load
             time.sleep(2)
-
+            start_time = time.time()
             short_url = re.search(r"shorts/(.+)$", driver.current_url).group(1)
             video_request = youtube.videos().list(
                 part='contentDetails',
@@ -55,7 +55,10 @@ def main():
                 # Parse the duration from ISO 8601 format
                 duration_seconds = int(isodate.parse_duration(duration).total_seconds())
                 print(f"{short_url} and its duration is {duration_seconds} seconds")
-            time.sleep(duration_seconds)  # Sleep for the current short's duration
+                end_time = time.time()
+                print(f"Time taken to get duration: {end_time - start_time} seconds")
+            
+            time.sleep(duration_seconds-(end_time-start_time))  # Sleep for the current short's duration
             
     except KeyboardInterrupt:
         print("Exiting...")
