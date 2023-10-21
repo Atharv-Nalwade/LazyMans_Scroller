@@ -130,7 +130,7 @@ class TestDriverLoaded(unittest.TestCase):
 
 
     def test_api_response_received(self):
-        # Replace 'YOUR_SHORT_URL_HERE' with the actual short URL you want to test
+        #This is a demo short URL
         short_url = 'https://www.youtube.com/shorts/rUJr4PLA91E'
 
         # Make an API call to get video details using the 'youtube' object
@@ -146,6 +146,7 @@ class TestDriverLoaded(unittest.TestCase):
 
 
     def test_api_response_contains_duration(self):
+        #This is a demo short URL
         short_url = 'rUJr4PLA91E'
 
         # Make an API call to get video details using the 'youtube' object
